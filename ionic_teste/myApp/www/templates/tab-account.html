@@ -1,0 +1,36 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </label>
+    <button class="button button-full button-positive" ng-click="deconnect()">
+    Deconnection
+   </button>
+    	<div class="list">
+			<a class="item item-icon-left" href="#">
+	   		 <i class="icon ion-email"></i>
+	    	Check mail
+	  		</a>
+	    </div>
+	  
+	  <div class="list card">
+		<a href="#" class="item item-icon-left">
+    		<i class="icon ion-home"></i>
+   		 Enter home address
+ 		 </a>
+
+ 		 <a href="#" class="item item-icon-left">
+   				 <i class="icon ion-ios-telephone"></i>
+   				 Enter phone number
+  		</a>
+
+ 		 <a href="#" class="item item-icon-left">
+    		<i class="icon ion-wifi"></i>
+    		Enter New password
+  		</a>
+  	  </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

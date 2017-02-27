@@ -1,0 +1,27 @@
+<ion-view view-title="profil">
+  <ion-content>
+    <ion-list>
+      <div>
+    <h2>  Bonjour Poto :</h2>
+    <form>
+     <p>ID : <input       ng-value= "infoUser.idUser"  type="text" name="ID"  ng-model="infoUser.idUser"      required /></p>
+        <p>last Name:<input   ng-value= "infoUser.lastname" type="text" name="lastName" ng-model="infoUser.lastname" required /></p>
+        <p>Name: <input       ng-value= "infoUser.name" type="text" name="name" ng-model="infoUser.name"    required /></p>
+        <p>Adresse: <input    ng-value= "infoUser.adress"  type="text" name="adresse" ng-model="infoUser.adress" required /></p>
+        <p>Age : <input       ng-value= "infoUser.age"   type="text" name="age" ng-model="infoUser.age"    required /></p>
+         <p>Tel : <input       ng-value= "infoUser.phone"  type="text" name="phone" ng-model="infoUser.phone" required /></p>
+        <input type="submit" ng-click="modifUser()" />
+        <hr />
+     
+    </form>
+ </div>
+  
+
+
+
+
+      
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

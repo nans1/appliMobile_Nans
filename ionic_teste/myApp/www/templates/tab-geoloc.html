@@ -1,0 +1,34 @@
+<ion-view view-title="Geolocalisation">
+  <ion-content>
+    <ion-list>
+      
+     <ion-item>
+    	<map ng-transclude class="short-map" center="map.center" options="map.options">
+    		<marker position="marker.position" decimals="marker.decimals" options="marker.options"></marker>
+     		<points coords="points1.coords"  center="map.center"></points>
+    	</map>
+     </ion-item>
+     <label class="item item-input">
+  		<i class="icon ion-search placeholder-icon"></i>
+  		<input type="search" ng-model="query"  placeholder="Search">
+      <select ng-model='order'>
+         <option value="name" selected>organisé par nom</option>
+         <option value="adress">organisé par adresse</option>
+      </select>
+
+	  </label>
+     <ion-item  class="item-remove-animate item-avatar item-icon-right" events="map.events" ng-repeat="Profil in Profils | filter:{name : query} | orderBy: order " class="padding"  type="item-text-wrap">
+      	<img ng-src="{{Profil.avatar}}">
+      	<h4>{{Profil.name | uppercase}}</h4>
+      	<p>{{Profil.adress}}</p>
+      	<p>Age : {{Profil.age}} ans</p>
+      	<button class="button button-dark" ng-click="friendloc({{Profil.idUser}})" outline>Localisé </button>
+        <button class="button button-dark" ng-click="modif({{Profil.idUser}})" outline>Modifié </button>
+     </ion-item>
+    
+
+      
+     
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,41 @@
+/* Empty. Add your own CSS if you like */
+
+.header-color {
+
+	background-color:rgb(40,187,177);
+	
+}
+
+h2{
+	color:rgb(40,187,177);
+}
+
+
+.tab-nav tabs{
+
+	background-color:rgb(40,187,177);
+}
+
+.short-map {
+
+	height: 350px;
+}
+
+#login {
+     
+      background: url("/img/reptile.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+	
+}
+
+#logtab {
+
+	background-color: rgba(240,255,255,0.5);
+}
+
+.item {
+
+	background-color: rgba(240,255,255,0.3);
+}
